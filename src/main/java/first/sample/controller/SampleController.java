@@ -88,20 +88,20 @@ public class SampleController {
     }
 
     
-//    @RequestMapping(value="/sample/testMapArgumentResolver.do")
-//    public ModelAndView testMapArgumentResolver(CommandMap commandMap) throws Exception{
-//        ModelAndView mv = new ModelAndView("");
-//         
-//        if(commandMap.isEmpty() == false){
-//            Iterator<Entry<String,Object>> iterator = commandMap.getMap().entrySet().iterator();
-//            Entry<String,Object> entry = null;
-//            while(iterator.hasNext()){
-//                entry = iterator.next();
-//                log.debug("key : "+entry.getKey()+", value : "+entry.getValue());
-//            }
-//        }
-//        return mv;
-//    }
+    @RequestMapping(value="/sample/testMapArgumentResolver.do")
+    public ModelAndView testMapArgumentResolver(CommandMap commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("");
+         
+        if(commandMap.isEmpty() == false){
+            Iterator<Entry<String,Object>> iterator = commandMap.getMap().entrySet().iterator();
+            Entry<String,Object> entry = null;
+            while(iterator.hasNext()){
+                entry = iterator.next();
+                log.debug("key : "+entry.getKey()+", value : "+entry.getValue());
+            }
+        }
+        return mv;
+    }
 
 }
 
